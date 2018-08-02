@@ -1,2 +1,2 @@
 # Js30
-builds from the JavaScript30 challenge by Wes Bos
+builds from the JavaScript30 course by Wes Bos
