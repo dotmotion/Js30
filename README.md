@@ -2,8 +2,12 @@
 
 30 ideas, 30 projects
 
-1.- JavaScript Drum Kit [AUG02]
+1.- JavaScript Drum Kit [AUG 02]
 
-2.- JS analog clock [AUG02]
+2.- JS analog clock [AUG 02]
 
-3.- Update CSS variables with JS [AUG03]
+3.- Update CSS variables with JS [AUG 03]
+
+4.- Array excercise [AUG 03]
+
+5.-
