@@ -11,3 +11,5 @@
 4.- Array excercise [AUG 03]
 
 5.- Flex Panel Gallery [AUG 03]
+
+6.- Type Ahead (match search) [AUG 05]
