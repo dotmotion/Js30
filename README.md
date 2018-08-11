@@ -15,3 +15,5 @@
 6.- Type Ahead (match search) [AUG 05]
 
 7.- Array exercise # 2 [AUG 06]
+
+8.- HTML5 Canvas [AUG 10]
