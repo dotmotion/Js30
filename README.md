@@ -17,3 +17,5 @@
 7.- Array exercise # 2 [AUG 06]
 
 8.- HTML5 Canvas [AUG 10]
+
+9.- Hold shift to check multiple checkboxes [AUG 11]
