@@ -19,3 +19,5 @@
 8.- HTML5 Canvas [AUG 10]
 
 9.- Hold shift to check multiple checkboxes [AUG 11]
+
+10.- Custom Video Player [AUG 12]
