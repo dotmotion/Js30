@@ -23,3 +23,5 @@
 10.- Custom Video Player [AUG 12]
 
 11.- Key Sequence Detection [AUG 13]
+
+12.- Slide in on Scroll [AUG 14]
