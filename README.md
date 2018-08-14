@@ -21,3 +21,5 @@
 9.- Hold shift to check multiple checkboxes [AUG 11]
 
 10.- Custom Video Player [AUG 12]
+
+11.- Key Sequence Detection [AUG 13]
