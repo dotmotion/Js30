@@ -27,3 +27,5 @@
 12.- Slide in on Scroll [AUG 14]
 
 13.- Reference vs. Copy [AUG 15]
+
+14.- Localstorage & Event delegation [AUG 17]
