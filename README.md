@@ -29,3 +29,5 @@
 13.- Reference vs. Copy [AUG 15]
 
 14.- Localstorage & Event delegation [AUG 17]
+
+15.- Mouse Move Shadow [AUG 18]
