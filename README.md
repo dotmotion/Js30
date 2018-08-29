@@ -31,3 +31,5 @@
 14.- Localstorage & Event delegation [AUG 17]
 
 15.- Mouse Move Shadow [AUG 18]
+
+16.- Sort without Articles [AUG 28]
