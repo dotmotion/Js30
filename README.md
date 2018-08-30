@@ -33,3 +33,5 @@
 15.- Mouse Move Shadow [AUG 18]
 
 16.- Sort without Articles [AUG 28]
+
+17.- Adding up times with reduce() [AUG 29]
