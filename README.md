@@ -36,4 +36,6 @@
 
 17.- Adding up times with reduce() [AUG 29]
 
-18.- Follow Along Link Highlighter
+18.- Follow Along Link Highlighter [AUG 30]
+
+19.- Sticky Nav [AUG 30]
