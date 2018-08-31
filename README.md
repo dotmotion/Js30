@@ -35,3 +35,5 @@
 16.- Sort without Articles [AUG 28]
 
 17.- Adding up times with reduce() [AUG 29]
+
+18.- Follow Along Link Highlighter
