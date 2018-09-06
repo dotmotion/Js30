@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Follow Along Nav</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="followNav.css">
+</head>
+
+<body>
+  <nav class="top">
+    <div class="dropdownBackground">
+      <span class="arrow"></span>
+    </div>
+
+    <ul class="wrapper">
+      <li>
+        <a href="#">About Me</a>
+        <div class="dropdown dropdown1">
+          <div class="bio">
+            <img src="http://outon.mx/img/portrait.jpg">
+            <p>Andrew is a self-taught web developer that likes to learn something new every day!</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+        <ul class="dropdown projects">
+          <li>
+            <span class="code">React</span>
+            <a href="https://dotmotion.github.io/minimal_portfolio/">Minimal Portfolio</a>
+          </li>
+          <li>
+            <span class="code">JavaScript</span>
+            <a href="https://dotmotion.github.io/BudgetApp/">Budget App</a>
+          </li>
+          <li>
+            <span class="code">SASS</span>
+            <a href="outon.mx">Modern Portfolio</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Other Links</a>
+        <ul class="dropdown dropdown3">
+          <li><a class="button" href="http://twitter.com/half_liquid">Twitter</a></li>
+          <li><a class="button" href="https://github.com/dotmotion">GitHub</a></li>
+          <li><a class="button" href="http://dotmotion.outon.mx">Blog</a></li>
+          <li><a class="button" href="https://codepen.io/dotmotion/">CodePen</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="followNav.js"></script>
+
+</body>
+
+</html>
