@@ -39,3 +39,7 @@
 - 18.- Follow Along Link Highlighter [AUG 30]
 
 - 19.- Sticky Nav [AUG 30]
+
+- 20.- Follow Along Nav [SEP 05]
+
+- 21.- Click and Drag to Scroll [SEP 06]
