@@ -43,3 +43,5 @@
 - 20.- Follow Along Nav [SEP 05]
 
 - 21.- Click and Drag to Scroll [SEP 06]
+
+- 22.- Break Countdown Timer [SEP 07]
