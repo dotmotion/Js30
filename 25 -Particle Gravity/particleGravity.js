@@ -10,14 +10,14 @@ function randomRange(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-const colors = ["#465B55", "#373A3D", "#F8F7FF", "#58475C"];
+const colors = ["#FF6138", "#FFFF9D", "#BEEB9F", "#79BD8F", "#00A388"];
 let circleArray = [];
 const speed = 2;
 const mouse = {
   x: undefined,
   y: undefined
 };
-const gravity = 1;
+const gravity = 1.5;
 
 window.addEventListener("mousemove", e => {
   mouse.x = e.x;
@@ -74,14 +74,14 @@ function Circle(x, y, dx, dy, radius, color, friction) {
 function init() {
   circleArray = [];
   // Circle Generator
-  for (let i = 0; i < 100; i++) {
-    let radius = randomRange(20, 25);
+  for (let i = 0; i < 50; i++) {
+    let radius = randomRange(20, 40);
     let x = randomRange(radius, window.innerWidth - radius);
     let y = randomRange(radius, window.innerHeight / 2);
     let colNum = Math.floor(randomRange(0, colors.length));
-    let dy = Math.floor(randomRange(-5, 5));
-    let dx = Math.floor(randomRange(-2, 2));
-    let friction = randomRange(0.75, 0.85);
+    let dy = Math.floor(randomRange(-7, 7));
+    let dx = Math.floor(randomRange(-5, 5));
+    let friction = randomRange(0.7, 0.9);
     circleArray.push(
       new Circle(x, y, dx, dy, radius, colors[colNum], friction)
     );
