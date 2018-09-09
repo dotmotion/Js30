@@ -24,9 +24,8 @@ window.addEventListener("mousemove", e => {
   mouse.y = e.y;
 });
 
-window.addEventListener("mouseout", () => {
-  mouse.x = -100;
-  mouse.y = -100;
+window.addEventListener("mousedown", () => {
+  init();
 });
 
 window.addEventListener("resize", () => {
@@ -34,9 +33,10 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
 });
 
-function Circle(x, y, dy, radius, color, friction) {
+function Circle(x, y, dx, dy, radius, color, friction) {
   this.x = x;
   this.y = y;
+  this.dx = dx;
   this.dy = dy;
   this.radius = radius;
   this.color = color;
@@ -51,13 +51,21 @@ function Circle(x, y, dy, radius, color, friction) {
 
   this.update = () => {
     // Handle Collision with floor
-    if (this.y + this.radius > innerHeight) {
+    if (this.y + this.radius + this.dy > innerHeight) {
       this.dy = -this.dy * this.friction;
     } else {
       // Gravity
       this.dy += gravity;
     }
+    // Handle Collision with walls
+    if (
+      this.x + this.radius + this.dx > innerWidth ||
+      this.x - this.radius < 0
+    ) {
+      this.dx = -this.dx * this.friction;
+    }
     this.y += this.dy;
+    this.x += this.dx;
     // Re-draw each circle
     this.draw();
   };
@@ -66,14 +74,17 @@ function Circle(x, y, dy, radius, color, friction) {
 function init() {
   circleArray = [];
   // Circle Generator
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 100; i++) {
     let radius = randomRange(20, 25);
     let x = randomRange(radius, window.innerWidth - radius);
     let y = randomRange(radius, window.innerHeight / 2);
     let colNum = Math.floor(randomRange(0, colors.length));
-    let dy = 2;
-    let friction = 0.75;
-    circleArray.push(new Circle(x, y, dy, radius, colors[colNum], friction));
+    let dy = Math.floor(randomRange(-5, 5));
+    let dx = Math.floor(randomRange(-2, 2));
+    let friction = randomRange(0.75, 0.85);
+    circleArray.push(
+      new Circle(x, y, dx, dy, radius, colors[colNum], friction)
+    );
   }
 }
 
