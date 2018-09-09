@@ -31,6 +31,8 @@ function Circle(x, y, dx, dy, radius, color) {
   this.dy = dy;
   this.radius = radius;
   this.color = color;
+  this.minRad = radius;
+  this.maxRad = radius * 3;
 
   this.draw = () => {
     c.beginPath();
@@ -40,6 +42,7 @@ function Circle(x, y, dx, dy, radius, color) {
   };
 
   this.update = () => {
+    // Handle Collision with walls
     if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
       this.dx = -this.dx;
     }
@@ -49,13 +52,28 @@ function Circle(x, y, dx, dy, radius, color) {
     this.x += this.dx;
     this.y += this.dy;
 
+    // Handle mouse interaction
+    if (
+      mouse.x - this.x < 50 &&
+      mouse.x - this.x > -50 &&
+      mouse.y - this.y < 50 &&
+      mouse.y - this.y > -50
+    ) {
+      if (this.radius < this.maxRad) {
+        this.radius += 1;
+      }
+    } else if (this.radius > this.minRad) {
+      this.radius -= 1;
+    }
+
+    // Re-draw each circle
     this.draw();
   };
 }
 
 // Circle Generator
-for (let i = 0; i < 100; i++) {
-  let radius = randomRange(7, 25);
+for (let i = 0; i < 500; i++) {
+  let radius = randomRange(3, 5);
   let x = randomRange(radius, window.innerWidth - radius);
   let y = randomRange(radius, window.innerHeight - radius);
   let colNum = Math.floor(randomRange(0, colors.length));
