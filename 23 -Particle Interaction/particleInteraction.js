@@ -11,6 +11,18 @@ function randomRange(min, max) {
 }
 
 const colors = ["#E2E6E8", "#8DA2AD", "#989B9C", "#688EA1", "#666869"];
+const circleArray = [];
+const speed = 2;
+const mouse = {
+  x: undefined,
+  y: undefined
+};
+
+window.addEventListener("mousemove", e => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+  console.log(mouse);
+});
 
 function Circle(x, y, dx, dy, radius, color) {
   this.x = x;
@@ -41,16 +53,14 @@ function Circle(x, y, dx, dy, radius, color) {
   };
 }
 
-let circleArray = [];
-
+// Circle Generator
 for (let i = 0; i < 100; i++) {
-  // Variables
-  let radius = 30;
+  let radius = randomRange(7, 25);
   let x = randomRange(radius, window.innerWidth - radius);
   let y = randomRange(radius, window.innerHeight - radius);
   let colNum = Math.floor(randomRange(0, colors.length));
-  let dx = randomRange(-3, 3);
-  let dy = randomRange(-3, 3);
+  let dx = randomRange(-speed, speed);
+  let dy = randomRange(-speed, speed);
   circleArray.push(new Circle(x, y, dx, dy, radius, colors[colNum]));
 }
 
