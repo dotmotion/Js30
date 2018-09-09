@@ -10,7 +10,7 @@ function randomRange(min, max) {
   return Math.random() * (max - min + 1) + min;
 }
 
-const colors = ["#E2E6E8", "#8DA2AD", "#989B9C", "#688EA1", "#666869"];
+const colors = ["#6C746D", "#DBD0BF", "#E87300", "#CF4100"];
 let circleArray = [];
 const speed = 1;
 const mouse = {
@@ -41,7 +41,7 @@ function Circle(x, y, dx, dy, radius, color) {
   this.radius = radius;
   this.color = color;
   this.minRad = radius;
-  this.maxRad = radius * 3;
+  this.maxRad = radius * 4;
 
   this.draw = () => {
     c.beginPath();
@@ -84,7 +84,7 @@ function init() {
   circleArray = [];
   // Circle Generator
   for (let i = 0; i < 500; i++) {
-    let radius = randomRange(3, 5);
+    let radius = randomRange(3, 7);
     let x = randomRange(radius, window.innerWidth - radius);
     let y = randomRange(radius, window.innerHeight - radius);
     let colNum = Math.floor(randomRange(0, colors.length));
