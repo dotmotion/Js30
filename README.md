@@ -1,6 +1,8 @@
 # Js30
 
-#### 30 ideas, 30 projects
+This repo started as a log for the JS30 course by Wes Bos, but it will now morph into a list of every small project or experiment using plain JavaScript.
+
+#### List of Projects & Experiments
 
 - 1.- JavaScript Drum Kit [AUG 02]
 
@@ -51,3 +53,5 @@
 - 24.- Particle Interaction [SEP 08]
 
 - 25.- Particle Gravity [SEP 08]
+
+- 26.- Recursive Fractal Tree **(p5.js)** [SEP 12]
