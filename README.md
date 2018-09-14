@@ -1,6 +1,6 @@
 # Js30
 
-This repo started as a log for the JS30 course by Wes Bos, but it will now morph into a list of every small project or experiment using plain JavaScript.
+This repo started as a log for the JS30 course by Wes Bos, but it will now morph into a list of every small project or experiment using JavaScript.
 
 #### List of Projects & Experiments
 
