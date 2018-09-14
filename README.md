@@ -57,3 +57,5 @@ This repo started as a log for the JS30 course by Wes Bos, but it will now morph
 - 26.- Recursive Fractal Tree **(p5.js)** [SEP 12]
 
 - 27.- Whack-A-Mole [SEP 13]
+
+- 28 .- Video Speed Controller [SEP 14]
