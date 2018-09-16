@@ -46,10 +46,11 @@ function Particle(x, y, radius, color) {
   this.y = y;
   this.radius = radius;
   this.color = color;
-  this.radians = 0;
+  this.radians = Math.random() * Math.PI * 2;
   this.velocity = 0.05;
+  this.distance = randomIntFromRange(50, 120);
 
-  this.draw = function() {
+  this.draw = () => {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
@@ -57,11 +58,13 @@ function Particle(x, y, radius, color) {
     c.closePath();
   };
 
-  this.update = function() {
+  this.update = () => {
     //Move points over time
     this.radians += this.velocity;
-    this.x = x + Math.cos(this.radians) * 100;
-    this.y = y + Math.sin(this.radians) * 100;
+
+    //Circular Motion
+    this.x = x + Math.cos(this.radians) * this.distance;
+    this.y = y + Math.sin(this.radians) * this.distance;
     this.draw();
   };
 }
@@ -71,9 +74,9 @@ let particles;
 function init() {
   particles = [];
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 50; i++) {
     particles.push(
-      new Particle(canvas.width / 2, canvas.height / 2, 5, "blue")
+      new Particle(canvas.width / 2, canvas.height / 2, 5, randomColor(colors))
     );
   }
   console.log(particles);
