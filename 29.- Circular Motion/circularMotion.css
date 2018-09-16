@@ -1,0 +1,11 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #16191b;
+  overflow: hidden;
+}
+
+canvas {
+  z-index: 0;
+  position: absolute;
+}

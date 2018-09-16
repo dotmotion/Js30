@@ -91,7 +91,7 @@ function init() {
 // Animation Loop
 function animate() {
   requestAnimationFrame(animate);
-  c.fillStyle = "rgba(255, 255, 255, 0.05)";
+  c.fillStyle = "rgba(22, 25, 27, 0.05)";
   c.fillRect(0, 0, canvas.width, canvas.height);
 
   particles.forEach(particle => {
