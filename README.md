@@ -59,3 +59,5 @@ This repo started as a log for the JS30 course by Wes Bos, but it will now morph
 - 27.- Whack-A-Mole [SEP 13]
 
 - 28 .- Video Speed Controller [SEP 14]
+
+- 29 .- Circular Motion [SEP 15]
