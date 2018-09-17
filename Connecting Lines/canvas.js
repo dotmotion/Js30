@@ -91,7 +91,7 @@ function init() {
   let i = 0;
   const speed = 1;
 
-  while (i < 25) {
+  while (i < 75) {
     let radius = 12;
     let x = randomRange(radius, window.innerWidth - radius);
     let y = randomRange(radius, window.innerHeight - radius);
