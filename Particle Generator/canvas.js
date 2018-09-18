@@ -4,9 +4,9 @@ const c = canvas.getContext("2d");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
-let particleNum = 9;
-let particles = {},
-  particleindex = 0;
+let particleNum = 30;
+let particles = {};
+let particleindex = 0;
 
 const mouse = {
   x: innerWidth / 2,
@@ -50,7 +50,7 @@ function Particle(color) {
   this.y = canvas.height / 2;
   this.radius = 3;
   this.dx = Math.random() * 10 - 5;
-  this.dy = Math.random() * 10 - 5;
+  this.dy = Math.random() * 10 - 8;
   this.gravity = 0.3;
   this.color = color;
 
