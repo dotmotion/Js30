@@ -13,7 +13,7 @@ const mouse = {
   y: innerHeight / 2
 };
 
-const colors = ["#F2BB13", "#F2A71B", "#F28322", "#F25D27", "#D93829"];
+const colors = ["#014656", "#009EA9", "#F8F7F5", "#FAD956", "#F8A602"];
 
 //Utility Functions
 function randomRange(min, max) {
