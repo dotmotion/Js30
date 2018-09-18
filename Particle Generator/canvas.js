@@ -4,7 +4,7 @@ const c = canvas.getContext("2d");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
-let particleNum = 30;
+let numPerFrame = 10;
 let particles = {};
 let particleindex = 0;
 
@@ -88,9 +88,9 @@ function Particle(color) {
 function animate() {
   requestAnimationFrame(animate);
   //Background
-  c.fillStyle = "black";
+  c.fillStyle = "rgba(22,25,27, 0.3)";
   c.fillRect(0, 0, canvas.width, canvas.height);
-  for (var i = 0; i < particleNum; i++) {
+  for (var i = 0; i < numPerFrame; i++) {
     new Particle(randomColor(colors));
   }
   for (var i in particles) {
