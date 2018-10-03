@@ -3,13 +3,13 @@
 //
 
 class TextScramble {
-  constructor(el) {
-    this.el = el;
+  constructor(txt) {
+    this.txt = txt;
     this.chars = "!<>-_\\/[]{}—=+*^?#________";
     this.update = this.update.bind(this);
   }
   setText(newText) {
-    const oldText = this.el.innerText;
+    const oldText = this.txt.innerText;
     const length = Math.max(oldText.length, newText.length);
     const promise = new Promise(resolve => (this.resolve = resolve));
     this.queue = [];
@@ -43,7 +43,7 @@ class TextScramble {
         output += from;
       }
     }
-    this.el.innerHTML = output;
+    this.txt.innerHTML = output;
     if (complete === this.queue.length) {
       this.resolve();
     } else {
@@ -67,18 +67,21 @@ const phrases = [
   "just as I did",
   "that there's a difference",
   "between knowing the path",
-  "and walking the path"
+  "and walking the path",
+  ""
 ];
 
-const el = document.querySelector(".text");
-const fx = new TextScramble(el);
+const txt = document.querySelector(".text");
+const fx = new TextScramble(txt);
 
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 800);
+    if (counter < phrases.length) {
+      setTimeout(next, 800);
+    }
   });
-  counter = (counter + 1) % phrases.length;
+  counter = counter + 1;
 };
 
 next();
