@@ -60,16 +60,7 @@ class TextScramble {
 // Example
 //
 
-const phrases = [
-  "Neo,",
-  "sooner or later",
-  "you're going to realize",
-  "just as I did",
-  "that there's a difference",
-  "between knowing the path",
-  "and walking the path",
-  ""
-];
+const phrases = ["May the Dark shine your way"];
 
 const txt = document.querySelector(".text");
 const fx = new TextScramble(txt);
