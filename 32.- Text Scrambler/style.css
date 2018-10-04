@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Roboto+Mono:100";
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:300";
 html,
 body {
   font-family: "Roboto Mono", monospace;
@@ -18,5 +18,5 @@ body {
   color: #e2e6e8;
 }
 .dud {
-  color: #f1f5f7;
+  color: #858585;
 }
